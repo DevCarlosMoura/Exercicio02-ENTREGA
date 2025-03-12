@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercicio02_ENTREGA.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+                      Padding="30"
+                      Spacing="25">
+            <Label
+                x:Name="lblNomeCompleto"
+                Text="NomeCompleto"/>
+
+            <Entry
+                x:Name="etrNomeCompleto"
+                BackgroundColor="Aqua"/>
+            <Label
+                x:Name="lblEndereco"
+                Text="Endereco"/>
+            <Entry
+                x:Name="etrEndereco"
+                BackgroundColor="Aqua"/>
+            <Label
+                x:Name="lblDataNasc"
+                Text="Data de Nascimento"/>
+            <Entry
+                x:Name="etrDataNasc"
+                BackgroundColor="Aqua"/>
+            <DatePicker MinimumDate="{Binding MinDate}"
+                MaximumDate="{Binding MaxDate}"
+                Date="{Binding SelectedDate}" />
+            <Picker
+                x:Name="pickergenero"
+				Title="(Feminino/Masculino)">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Feminino</x:String>
+                        <x:String>Masculino</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Label
+	            x:Name="lblEmail"
+	            Text="E-mail"/>
+            <Entry
+                x:Name="etrEmail"
+                BackgroundColor="Aqua"/>
+            <Label
+                x:Name="lblCPF"
+                Text="CPF"/>
+            <Entry
+                x:Name="etrCPF"
+                BackgroundColor="Aqua"/>
+            <Label
+				x:Name="lblRG"
+                Text="RG"/>
+            <Entry
+				x:Name="etrRG"
+                BackgroundColor="Aqua"/>
+            <Label
+                x:Name="lblContato"
+                Text="Contato"/>
+            <Entry
+                x:Name="etrContato"
+                BackgroundColor="Aqua"/>
+            <Button
+                x:Name="btnGravar"
+                Text="Gravar"
+                FontSize="Medium"/>
+            <Button
+                x:Name="btnVoltar"
+                Text="Voltar"
+                FontSize="Medium"/>
+            <Label
+	            x:Name="LblCadastrarNovoCliente"
+	            Text="Cadastrar Novo Cliente ?"/>
+            <CheckBox
+                x:Name="chkCadastrar Novo Cliente"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
