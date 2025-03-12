@@ -21,12 +21,22 @@
                 x:Name="etrEndereco"
                 BackgroundColor="Aqua"/>
             <Label
+                x:Name="lblnNumeroouApartamento"
+                Text="Numero ou Apartamento"/>
+            <Entry
+                x:Name="etrNumeroouApartamento"
+                BackgroundColor="Aqua"/>
+            <Label
+                x:Name="lblDependentes"
+                Text="Tem depedentes?, Se sim quantos."/>
+            <Entry
+                x:Name="etrDependentes"
+                BackgroundColor="Aqua"/>
+            <Label
                 x:Name="lblDataNasc"
                 Text="Data de Nascimento"/>
-            <Entry
-                x:Name="etrDataNasc"
-                BackgroundColor="Aqua"/>
-            <DatePicker MinimumDate="{Binding MinDate}"
+            <DatePicker
+                MinimumDate="{Binding MinDate}"
                 MaximumDate="{Binding MaxDate}"
                 Date="{Binding SelectedDate}" />
             <Picker
